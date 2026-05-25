@@ -1,61 +1,45 @@
-# Udyog Saarthi - Your Career Companion
+# Udyog Saarthi – Android App for Job Coaching & Career Support
 
-An Android application designed to help users find jobs, build resumes, discover training institutes, and stay updated on job fairs.
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+![Material Design](https://img.shields.io/badge/Material%20Design-757575?style=for-the-badge&logo=material-design&logoColor=white)
 
-## 📱 Features
+An Android app providing career coaching, skill development, and job search support for individuals under job coaching programs.
 
-### Authentication
-- **User Registration** - Create new account with email, phone, and password
-- **User Login** - Secure login with email validation
-- **Session Management** - Persistent login state
+---
 
-### Core Features
-- **Job Listings** - Browse and search available job opportunities
-- **Resume Builder** - Create professional resumes with personal info, education, skills, and experience
-- **Institutes Directory** - Find ITI, Polytechnic, and Skill Development centers
-- **Job Fairs** - Stay updated on upcoming job fair events
-- **Document Uploads** - Upload and manage important documents (Aadhar, Resume, Certificates, etc.)
+## 📋 Features
 
-## 🛠️ Tech Stack
+- Job Listings with search
+- Resume Builder
+- Institutes Directory
+- Job Fairs
+- Document Uploads
+- Navigation Drawer + Bottom Navigation
+- Splash Screen and Login
 
-- **Language**: Kotlin
-- **Architecture**: MVVM (Model-View-ViewModel)
-- **UI Framework**: Material Components for Android
-- **Navigation**: Android Navigation Component
-- **View Binding**: Enabled for type-safe view access
-- **Min SDK**: 24 (Android 7.0)
-- **Target SDK**: 34 (Android 14)
+---
 
-## 📂 Project Structure
+## 🛠 Tech Stack
 
-```
-app/
-├── src/main/
-│   ├── java/com/example/udyogsaarthi/
-│   │   ├── ui/                    # Activities and Fragments
-│   │   │   ├── LoginActivity.kt
-│   │   │   ├── RegisterActivity.kt
-│   │   │   ├── MainActivity.kt
-│   │   │   ├── home/
-│   │   │   ├── jobs/
-│   │   │   ├── resume/
-│   │   │   ├── institutes/
-│   │   │   ├── jobfairs/
-│   │   │   ├── documents/
-│   │   │   └── more/
-│   │   ├── model/                 # Data models
-│   │   ├── data/                  # Repositories
-│   │   └── utils/                 # Utility classes
-│   └── res/
-│       ├── layout/                # XML layouts
-│       ├── navigation/            # Navigation graph
-│       ├── menu/                  # Menu resources
-│       └── values/                # Colors, strings, themes
-```
+- **Language:** Kotlin
+- **UI:** XML, Material Components
+- **Architecture:** MVVM
+- **Libraries:** Navigation Component, ViewModel, LiveData, RecyclerView
+- **IDE:** Android Studio
+
+---
+
+## 📸 Screenshots
+
+*(Add screenshots of your app here)*
+
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Android Studio Arctic Fox or later
 - JDK 11 or later
 - Android SDK 34
@@ -64,39 +48,35 @@ app/
 ### Installation
 
 1. Clone the repository:
-```bash
-git clone https://github.com/YOUR_USERNAME/UdyogSarthi.git
+```
+git clone https://github.com/aayushpatel2533/Udyog-Saarthi-App.git
 ```
 
 2. Open the project in Android Studio
-
 3. Sync Gradle files:
    - File → Sync Project with Gradle Files
-
 4. Build the project:
    - Build → Rebuild Project
-
 5. Run on emulator or device:
    - Run → Run 'app'
 
+---
+
 ## 🔐 Test Credentials
 
-**Default User:**
-- Email: `user@gmail.com`
-- Password: `1234`
+- **Email:** user@gmail.com
+- **Password:** 1234
 
-Or register a new account through the app!
-
-## 📸 Screenshots
-
-*(Add screenshots of your app here)*
+---
 
 ## 🎨 Design
 
-- **Theme**: Material Components Light Theme
-- **Primary Color**: Blue (#1565C0)
-- **UI Pattern**: Navigation Drawer + Bottom Navigation
-- **Responsive**: Adapts to different screen sizes
+- **Theme:** Material Components Light Theme
+- **Primary Color:** Blue (#1565C0)
+- **UI Pattern:** Navigation Drawer + Bottom Navigation
+- Responsive: Adapts to different screen sizes
+
+---
 
 ## 📋 Features in Detail
 
@@ -131,29 +111,40 @@ Or register a new account through the app!
 - Progress indicators
 - File picker integration
 
+---
+
 ## 🔄 Future Enhancements
 
-- [ ] Backend API integration
-- [ ] Real-time job notifications
-- [ ] Resume PDF export
-- [ ] Social media sharing
-- [ ] Advanced search filters
-- [ ] Bookmark favorite jobs
-- [ ] Application tracking
-- [ ] Profile management
-- [ ] Dark mode support
+- Backend API integration
+- Real-time job notifications
+- Resume PDF export
+- Social media sharing
+- Advanced search filters
+- Bookmark favorite jobs
+- Application tracking
+- Profile management
+- Dark mode support
+
+---
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+---
+
 ## 👨‍💻 Developer
 
-Developed as part of Android development learning project.
+Developed by **Aayush Patel**  
+GitHub: [github.com/aayushpatel2533](https://github.com/aayushpatel2533)
+
+---
 
 ## 📞 Contact
 
@@ -161,4 +152,4 @@ For any queries or suggestions, please open an issue on GitHub.
 
 ---
 
-**Note**: This app currently uses in-memory storage for user data. Data will be lost when the app is closed. Future versions will include persistent storage with Room database or backend integration.
+> **Note:** This app currently uses in-memory storage for user data. Data will be lost when the app is closed. Future versions will include persistent storage with Room database or backend integration.
