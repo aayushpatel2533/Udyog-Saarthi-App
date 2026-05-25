@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Udyog Saarthi</string>
+    <string name="nav_header_title">Udyog Saarthi</string>
+    <string name="nav_header_subtitle">Your Career Companion</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Drawer menu items -->
+    <string name="menu_home">Home</string>
+    <string name="menu_job_listings">Job Listings</string>
+    <string name="menu_resume_builder">Resume Builder</string>
+    <string name="menu_institutes">Institutes Directory</string>
+    <string name="menu_job_fairs">Job Fairs</string>
+    <string name="menu_document_uploads">Document Uploads</string>
+
+    <!-- Bottom nav items -->
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_jobs">Jobs</string>
+    <string name="bottom_nav_resume">Resume</string>
+    <string name="bottom_nav_more">More</string>
+</resources>

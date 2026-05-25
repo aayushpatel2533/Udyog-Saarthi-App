@@ -1,0 +1,138 @@
+================================================================================
+                    UDYOG SAARTHI - GITHUB UPLOAD GUIDE
+================================================================================
+
+OPTION 1: AUTOMATED SCRIPT (EASIEST)
+================================================================================
+
+1. Install Git (if not already installed):
+   Download from: https://git-scm.com/download/win
+   Run installer with default settings
+   Restart Command Prompt after installation
+
+2. Create GitHub Repository:
+   - Go to: https://github.com/new
+   - Repository name: UdyogSarthi
+   - Description: Android job search and career companion app
+   - Choose Public or Private
+   - DO NOT check "Initialize with README"
+   - Click "Create repository"
+
+3. Run the Upload Script:
+   - Double-click: upload-to-github.bat
+   - Follow the prompts
+   - Enter your GitHub repository URL when asked
+   - Done!
+
+
+OPTION 2: MANUAL COMMANDS
+================================================================================
+
+1. Install Git (same as above)
+
+2. Create GitHub Repository (same as above)
+
+3. Open Command Prompt in project folder:
+   cd C:\Users\aayus\AndroidStudioProjects\UdyogSarthi
+
+4. Run these commands one by one:
+
+   git init
+   git add .
+   git commit -m "Initial commit: Udyog Saarthi Android app"
+   git branch -M main
+   git remote add origin https://github.com/YOUR_USERNAME/UdyogSarthi.git
+   git push -u origin main
+
+   (Replace YOUR_USERNAME with your actual GitHub username)
+
+
+OPTION 3: USING ANDROID STUDIO
+================================================================================
+
+1. Install Git (same as above)
+
+2. In Android Studio:
+   - VCS → Enable Version Control Integration → Select "Git"
+   - VCS → Commit (or Ctrl+K)
+   - Select all files
+   - Enter commit message: "Initial commit: Udyog Saarthi Android app"
+   - Click "Commit"
+
+3. Create GitHub Repository (same as above)
+
+4. In Android Studio:
+   - VCS → Git → Remotes
+   - Click "+" to add remote
+   - Name: origin
+   - URL: https://github.com/YOUR_USERNAME/UdyogSarthi.git
+   - Click "OK"
+
+5. Push to GitHub:
+   - VCS → Git → Push (or Ctrl+Shift+K)
+   - Click "Push"
+
+
+TROUBLESHOOTING
+================================================================================
+
+Problem: "git is not recognized"
+Solution: Install Git and restart Command Prompt
+
+Problem: "Authentication failed"
+Solution: 
+  - Use Personal Access Token instead of password
+  - Go to: GitHub → Settings → Developer settings → Personal access tokens
+  - Generate new token with "repo" scope
+  - Use token as password when prompted
+
+Problem: "Repository not found"
+Solution: Make sure you created the repository on GitHub first
+
+Problem: "Permission denied"
+Solution: Check if you're logged into the correct GitHub account
+
+
+WHAT'S INCLUDED IN THE UPLOAD
+================================================================================
+
+✓ Complete Android project source code
+✓ All activities (Login, Register, Main)
+✓ All fragments (Home, Jobs, Resume, Institutes, Job Fairs, Documents)
+✓ Data models and repositories
+✓ Layout files and resources
+✓ Navigation graph
+✓ Gradle configuration
+✓ .gitignore file (excludes build files)
+✓ README.md with project documentation
+
+
+AFTER UPLOADING
+================================================================================
+
+Your repository will be available at:
+https://github.com/YOUR_USERNAME/UdyogSarthi
+
+You can:
+- Share the link with others
+- Clone it on other computers
+- Collaborate with team members
+- Track changes and versions
+- Create branches for new features
+
+
+NEED HELP?
+================================================================================
+
+If you encounter any issues:
+1. Check the error message carefully
+2. Make sure Git is installed: git --version
+3. Make sure you're in the correct directory
+4. Verify your GitHub repository exists
+5. Check your internet connection
+
+For more help:
+- Git documentation: https://git-scm.com/doc
+- GitHub guides: https://guides.github.com/
+
+================================================================================

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="6dp"
+    app:cardBackgroundColor="@color/colorSurface"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:strokeColor="#E8EAF6"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ── Top row: icon + info + status badge ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Document type icon circle -->
+            <FrameLayout
+                android:id="@+id/fl_doc_icon"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:background="@drawable/bg_doc_icon_pending">
+
+                <ImageView
+                    android:id="@+id/iv_doc_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Document icon"
+                    android:src="@android:drawable/ic_menu_agenda"
+                    app:tint="@color/colorPrimary" />
+
+            </FrameLayout>
+
+            <!-- Name + description -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Name row with optional badge -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_doc_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#1A1A1A"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_optional_badge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/bg_optional_badge"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp"
+                        android:text="Optional"
+                        android:textColor="#6A1B9A"
+                        android:textSize="9sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_doc_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#9E9E9E"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <!-- Status pill badge -->
+            <LinearLayout
+                android:id="@+id/ll_status_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_status_pending"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp">
+
+                <ImageView
+                    android:id="@+id/iv_status_icon"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:contentDescription="Status"
+                    android:src="@android:drawable/ic_menu_close_clear_cancel"
+                    app:tint="#F57F17" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="Pending"
+                    android:textColor="#F57F17"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ── Uploaded file name row (hidden until uploaded) ── -->
+        <LinearLayout
+            android:id="@+id/ll_file_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#F8FFF8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="8dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="File"
+                android:src="@android:drawable/ic_menu_agenda"
+                app:tint="#2E7D32" />
+
+            <TextView
+                android:id="@+id/tv_file_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_weight="1"
+                android:ellipsize="middle"
+                android:maxLines="1"
+                android:textColor="#2E7D32"
+                android:textSize="12sp" />
+
+            <!-- Re-upload / clear button -->
+            <ImageView
+                android:id="@+id/iv_clear_upload"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:contentDescription="Remove file"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                app:tint="#9E9E9E" />
+
+        </LinearLayout>
+
+        <!-- ── Upload button ── -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_upload"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:text="Upload Document"
+            android:textSize="13sp"
+            app:cornerRadius="10dp"
+            app:icon="@android:drawable/ic_menu_upload"
+            app:iconGravity="textStart"
+            app:iconSize="16dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

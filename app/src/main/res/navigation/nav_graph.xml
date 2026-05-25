@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <!-- Bottom Nav Tab 1 / Drawer Item 1 -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.udyogsaarthi.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- Bottom Nav Tab 2 / Drawer Item 2 -->
+    <fragment
+        android:id="@+id/nav_job_listings"
+        android:name="com.example.udyogsaarthi.ui.jobs.JobListingsFragment"
+        android:label="Job Listings"
+        tools:layout="@layout/fragment_job_listings" />
+
+    <!-- Bottom Nav Tab 3 / Drawer Item 3 — Resume Builder -->
+    <fragment
+        android:id="@+id/nav_resume_builder"
+        android:name="com.example.udyogsaarthi.ui.resume.ResumeBuilderFragment"
+        android:label="Resume Builder"
+        tools:layout="@layout/fragment_resume_builder">
+
+        <!-- Navigate to preview screen -->
+        <action
+            android:id="@+id/action_resume_builder_to_preview"
+            app:destination="@id/nav_resume_preview"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <!-- Resume Preview — nested destination, not a top-level tab -->
+    <fragment
+        android:id="@+id/nav_resume_preview"
+        android:name="com.example.udyogsaarthi.ui.resume.ResumePreviewFragment"
+        android:label="Resume Preview"
+        tools:layout="@layout/fragment_resume_preview" />
+
+    <!-- Drawer Item 4 -->
+    <fragment
+        android:id="@+id/nav_institutes"
+        android:name="com.example.udyogsaarthi.ui.institutes.InstitutesFragment"
+        android:label="Institutes Directory"
+        tools:layout="@layout/fragment_institutes" />
+
+    <!-- Drawer Item 5 -->
+    <fragment
+        android:id="@+id/nav_job_fairs"
+        android:name="com.example.udyogsaarthi.ui.jobfairs.JobFairsFragment"
+        android:label="Job Fairs"
+        tools:layout="@layout/fragment_job_fairs" />
+
+    <!-- Drawer Item 6 -->
+    <fragment
+        android:id="@+id/nav_document_uploads"
+        android:name="com.example.udyogsaarthi.ui.documents.DocumentUploadsFragment"
+        android:label="Document Uploads"
+        tools:layout="@layout/fragment_document_uploads" />
+
+    <!-- Bottom Nav Tab 4 -->
+    <fragment
+        android:id="@+id/nav_more"
+        android:name="com.example.udyogsaarthi.ui.more.MoreFragment"
+        android:label="More"
+        tools:layout="@layout/fragment_more" />
+
+</navigation>
